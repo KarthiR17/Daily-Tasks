@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+            gap: 16px;
+            max-width: 300px;
+            border: 1px solid #ccc;
+            padding: 16px;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        .card-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .card-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nested-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            width: 100%;
+        }
+
+        .nested-item {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+        }
+        .card-footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h2>Card Title</h2>
+        </div>
+        <div class="card-body">
+            <div class="nested-grid">
+                <div class="nested-item">Item 1</div>
+                <div class="nested-item">Item 2</div>
+                <div class="nested-item">Item 3</div>
+                <div class="nested-item">Item 4</div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button>Action</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

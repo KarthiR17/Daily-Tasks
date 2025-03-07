@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .flexbox-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .flexbox-container p {
+            font-size: 1.2rem;
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="flexbox-container">
+                <p>This is a centered text inside a grid item!</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <p>Another Grid Item</p>
+        </div>
+        <div class="grid-item">
+            <p>More content</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

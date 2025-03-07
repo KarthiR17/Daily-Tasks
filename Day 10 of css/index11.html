@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Dashboard</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100%;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr); 
+      grid-template-rows: auto 1fr auto; 
+      grid-template-areas: 
+        "header header header header header header header header header header header header"
+        "sidebar sidebar main main main main main main main main main main"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
+      height: 100vh;
+      gap: 16px;
+      padding: 16px;
+    }
+
+    /* Header Style */
+    header {
+      grid-area: header;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      grid-column: span 3; 
+    }
+
+    .main {
+      grid-area: main;
+      padding: 20px;
+      background-color: #ecf0f1;
+      grid-column: span 9; 
+    }
+    footer {
+      grid-area: footer;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 1024px) {
+      .container {
+        grid-template-columns: repeat(6, 1fr); 
+        grid-template-areas: 
+          "header header header header header header"
+          "sidebar sidebar main main main main"
+          "footer footer footer footer footer footer";
+      }
+      .sidebar {
+        grid-column: span 2;
+      }
+      .main {
+        grid-column: span 4; 
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+          "header"
+          "main"
+          "sidebar"
+          "footer";
+      }
+      .sidebar {
+        grid-column: span 1; 
+      }
+      .main {
+        grid-column: span 1; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Dashboard</h1>
+    </header>
+
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <ul>
+        <li>Dashboard</li>
+        <li>Settings</li>
+        <li>Profile</li>
+        <li>Logout</li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <h2>Main Content</h2>
+      <p>Welcome to the dashboard. You can add your content here.</p>
+    </div>
+
+    <footer>
+      <p>© 2025 Dashboard. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>

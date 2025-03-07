@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feature Grid</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100%;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      grid-template-rows: repeat(3, 1fr);
+      gap: 16px;
+      padding: 16px;
+    }
+    .feature {
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .large-feature {
+      grid-column: span 2; 
+      grid-row: span 2; 
+      background-color: red; 
+    }
+
+    .feature-1 { background-color: greenyellow; }
+    .feature-2 { background-color: orange; }
+    .feature-3 { background-color: plum; }
+    .feature-4 { background-color: lightsalmon; }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="feature large-feature">Large Feature</div>
+
+    <div class="feature feature-1">Feature 1</div>
+    <div class="feature feature-2">Feature 2</div>
+    <div class="feature feature-3">Feature 3</div>
+    <div class="feature feature-4">Feature 4</div>
+  </div>
+
+</body>
+</html>
