@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .item {
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background-color: lightgray;
+            min-width: 150px;
+        }
+        .no-shrink {
+            flex-shrink: 0;
+        }
+        .no-shrink:nth-child(1) {
+            background-color: lightcoral;
+        }
+
+        .no-shrink:nth-child(3) {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="item no-shrink">Item 1 (No Shrink)</div>
+        <div class="item">Item 2 (Can Shrink)</div>
+        <div class="item no-shrink">Item 3 (No Shrink)</div>
+    </div>
+</body>
+
+</html>

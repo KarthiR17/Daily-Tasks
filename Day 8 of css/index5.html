@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            height: 200px;
+            width: 100%;
+            box-sizing: border-box;
+            align-items: flex-start;
+        }
+        .item {
+            padding: 20px;
+            text-align: center;
+            color: white;
+            background-color: lightgray;
+        }
+        .center-item {
+            align-self: center;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="item">Item 1</div>
+        <div class="item center-item">Item 2 (Centered)</div>
+        <div class="item">Item 3</div>
+      </div>
+      
+</body>
+
+</html>
