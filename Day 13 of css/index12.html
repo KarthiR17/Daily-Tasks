@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query for Print</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff;
+        }
+
+        .content h2 {
+            color: #007bff;
+        }
+
+        .sample-image {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media print {
+
+
+            body,
+            header,
+            footer,
+            .content {
+                background-color: transparent !important;
+            }
+
+            body,
+            header,
+            footer,
+            .content {
+                background-image: none !important;
+            }
+
+            body {
+                color: black !important;
+                background-color: white !important;
+            }
+
+            .sample-image {
+                max-width: 100% !important;
+                height: auto !important;
+
+            }
+
+            a {
+                text-decoration: none !important;
+                color: black !important;
+            }
+
+            header {
+                background-color: transparent !important;
+            }
+
+            footer {
+                background-color: transparent !important;
+            }
+
+            * {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Responsive Page</h1>
+        <p>This page will be formatted for print with a black-and-white theme, removing background colors and images.
+        </p>
+    </header>
+
+    <section class="content">
+        <h2>Content Section</h2>
+        <p>This is a sample paragraph with some text content. This content will be printed in black and white without
+            any background color or images.</p>
+        <img src="./assets/image-optimization.webp" alt="Sample Image" class="sample-image">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fade In Image on Hover</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .image-container {
+      width: 300px;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .fade-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0; 
+      transition: opacity 0.5s ease;
+    }
+
+    .image-container:hover .fade-image {
+      opacity: 1; 
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img src="./assets/morskie-oko-tatry_1204-510.avif" alt="Example Image" class="fade-image">
+  </div>
+
+</body>
+</html>

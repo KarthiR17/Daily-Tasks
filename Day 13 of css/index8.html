@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientation Specific Styles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+
+        @media (orientation: portrait) {
+            .content {
+                background-color: #f4f4f4;
+                color: #333;
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media (orientation: landscape) {
+            .content {
+                background-color: #cce7ff;
+                color: #222;
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Orientation-Specific Styles Example</h1>
+        <p>Resize your browser or rotate your device to see the styles change.</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Highlight Hover with Additional Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .highlight {
+      position: relative;
+      display: inline-block;
+      font-size: 20px;
+      color: #333;
+      cursor: pointer;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .highlight:hover {
+      color: #007bff;
+    }
+
+    .highlight::after {
+      content: " (Additional information appears here.)"; 
+      position: absolute;
+      bottom: -20px; 
+      left: 0;
+      background-color: #f0f0f0;
+      color: #555;
+      padding: 5px;
+      border-radius: 4px;
+      font-size: 16px;
+      display: none; 
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      width: 100%;
+    }
+
+    .highlight:hover::after {
+      display: block;
+      opacity: 1; 
+    }
+  </style>
+</head>
+<body>
+
+  <p>Here is some <span class="highlight">highlighted text</span> that will show more information when you hover over it.</p>
+
+</body>
+</html>

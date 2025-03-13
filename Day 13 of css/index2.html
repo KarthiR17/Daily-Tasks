@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Font Sizes</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, p {
+      margin: 10px 0;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px; 
+      }
+
+      p {
+        font-size: 14px; 
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      h1 {
+        font-size: 30px; 
+      }
+
+      p {
+        font-size: 18px; 
+      }
+    }
+
+    @media (min-width: 1025px) {
+      h1 {
+        font-size: 40px; 
+      }
+
+      p {
+        font-size: 22px; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Responsive Font Sizes</h1>
+  <p>This paragraph text will change size based on the screen width. Resize the window to see the effect.</p>
+
+</body>
+</html>

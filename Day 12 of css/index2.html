@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Grow Animation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .grow-button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      animation: growAnimation 2s infinite alternate; 
+    }
+
+    @keyframes growAnimation {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2); 
+      }
+      100% {
+        transform: scale(1); 
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <button class="grow-button">Grow Animation</button>
+
+</body>
+</html>

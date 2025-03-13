@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Sidebar Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .content {
+      width: 75%;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 25%;
+      padding: 20px;
+      background-color: #f4f4f4;
+      position: sticky;
+      top: 20px;
+      height: 100vh; 
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content h1 {
+      margin-top: 0;
+    }
+
+    .content p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Sticky Sidebar</h2>
+    <ul>
+      <li><a href="https://wts.indiana.edu/writing-guides/paragraphs-and-topic-sentences.html">Link 1</a></li>
+      <li><a href="https://www.flipkart.com/">Link 2</a></li>
+      <li><a href="https://www.amazon.in/">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h1>Sticky Sidebar Example</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo sit amet leo facilisis gravida. Etiam consectetur tristique justo id gravida. Nam vehicula risus ac nisi malesuada, non lobortis nisl viverra. Curabitur et mauris vitae felis fermentum fermentum. Donec a nunc erat.</p>
+    <p>Nullam ut quam nec mauris fermentum tincidunt. In hac habitasse platea dictumst. Curabitur vehicula tincidunt dui, nec malesuada risus auctor id. Donec facilisis augue vitae nisi viverra, nec facilisis sapien blandit.</p>
+    <p>Aliquam erat volutpat. Integer lacinia feugiat enim, eu volutpat nisl ullamcorper sit amet. Integer ut maximus ligula, et facilisis velit. Integer dapibus, nulla non interdum tincidunt, erat dui vestibulum libero, et volutpat est purus ac magna.</p>
+    <p>Morbi dapibus lectus vel tortor fermentum, non dapibus neque feugiat. Vivamus in pharetra nunc, euismod efficitur erat. Vestibulum imperdiet sapien et eros tempor, id volutpat neque malesuada.</p>
+    <p>Praesent cursus dolor sit amet fringilla sodales. Nulla facilisi. Integer ut velit vitae ante interdum porttitor at ac odio. Duis iaculis mollis arcu, ac varius odio viverra non. Nunc maximus, sapien a vestibulum maximus, tortor augue luctus sapien, id sollicitudin nulla augue vel lectus.</p>
+    <p>Curabitur vitae massa malesuada, tincidunt eros nec, eleifend ante. Nam rhoncus ipsum et nisl cursus, sit amet condimentum erat pharetra. Donec interdum tortor sit amet volutpat lacinia. Ut auctor risus a urna scelerisque lacinia.</p>
+  </div>
+
+</body>
+</html>

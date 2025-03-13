@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Footer at the Bottom</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex-grow: 1; 
+      padding: 20px;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .footer:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is an example of a fixed footer positioned at the bottom of the viewport.</p>
+    <p>Scroll down to see the footer remains fixed at the bottom even when you scroll.</p>
+    <p>Additional content...</p>
+    <p>Additional content...</p>
+    <p>Additional content...</p>
+    <p>Additional content...</p>
+    <p>Additional content...</p>
+  </div>
+
+  <div class="footer">
+    <p>Fixed Footer - Always at the Bottom</p>
+  </div>
+
+</body>
+</html>

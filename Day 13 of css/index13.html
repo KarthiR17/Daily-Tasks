@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Nested Media Queries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff;
+        }
+
+        .content h2 {
+            color: #007bff;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 767px) {
+            body {
+                font-size: 14px;
+            }
+        }
+
+        @media (min-width: 768px) and (orientation: landscape) {
+            body {
+                background-color: lightblue;
+                font-size: 16px;
+            }
+
+            .content {
+                background-color: lightyellow;
+            }
+
+            footer {
+                background-color: darkblue;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            body {
+                background-color: #eeeeee;
+                font-size: 18px;
+            }
+
+            .content {
+                background-color: lightgreen;
+            }
+
+            footer {
+                background-color: darkgreen;
+            }
+
+            header h1 {
+                font-size: 36px;
+            }
+
+            .content h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Design with Advanced Nested Media Queries</h1>
+    </header>
+
+    <section class="content">
+        <h2>Content Section</h2>
+        <p>This section will change based on the device type (tablet in landscape mode or desktop).</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+
+</html>

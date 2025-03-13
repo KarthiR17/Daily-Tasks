@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effects for Desktop Only</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .hover-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .hover-image {
+            width: 300px;
+            height: 200px;
+            margin-top: 20px;
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        @media (min-width: 768px) {
+
+            .hover-button:hover {
+                transform: scale(1.1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+            }
+
+            .hover-image:hover {
+                transform: scale(1.1);
+                filter: brightness(1.2);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="hover-button">Hover Over Me</button>
+        <img src="./assets/images tree.jpeg" alt="Placeholder Image" class="hover-image">
+    </div>
+</body>
+
+</html>

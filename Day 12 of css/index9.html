@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fading Text Carousel</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .carousel-container {
+      width: 80%;
+      max-width: 600px;
+      height: 100px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .carousel-text {
+      font-size: 30px;
+      font-weight: bold;
+      color: #007bff;
+      position: absolute;
+      animation: fadeText 12s infinite;
+    }
+
+    @keyframes fadeText {
+      0%, 100% {
+        opacity: 0;
+      }
+      10%, 90% {
+        opacity: 1;
+      }
+    }
+
+    .carousel-text:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .carousel-text:nth-child(2) {
+      animation-delay: 4s;
+    }
+
+    .carousel-text:nth-child(3) {
+      animation-delay: 8s;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="carousel-container">
+    <div class="carousel-text">Welcome to our website!</div>
+    <div class="carousel-text">Explore our services!</div>
+    <div class="carousel-text">Contact us today!</div>
+  </div>
+
+</body>
+</html>

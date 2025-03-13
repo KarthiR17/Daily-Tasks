@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Shadow Effect on Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 300px;
+      height: 400px;
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+      filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.2)); 
+      transition: transform 0.3s ease, filter 0.3s ease; 
+    }
+
+    .card:hover {
+      transform: translateY(-10px); 
+      filter: drop-shadow(10px 10px 20px rgba(4, 241, 67, 0.571)); 
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-content">
+      <h3>Card Title</h3>
+      <p>Some description goes here.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-content">
+      <h3>Another Card</h3>
+      <p>More details about this card.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-content">
+      <h3>More Cards</h3>
+      <p>This is another example.</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer-item {
+            margin: 10px 0;
+        }
+
+        .footer {
+            display: block;
+        }
+
+        .footer-item {
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .footer {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+            }
+
+            .footer-item {
+                display: inline-block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer class="footer">
+        <div class="footer-item">About Us</div>
+        <div class="footer-item">Contact</div>
+        <div class="footer-item">Privacy Policy</div>
+    </footer>
+</body>
+
+</html>
